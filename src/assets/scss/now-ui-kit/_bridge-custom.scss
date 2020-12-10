@@ -1,0 +1,42 @@
+.mt40 {
+    margin-top: 40px;
+}
+
+.green {
+    color: $bridge-green;
+}
+.green2 {
+    color: $bridge-green2;
+}
+.orange {
+    color: $bridge-orange;
+}
+.blue {
+    color: $bridge-blue;
+}
+.darkblue {
+    color: $bridge-darkblue;
+}
+
+.promo-title {
+    margin: 50px 0;
+    color: $bridge-green;
+}
+
+.promo-subtitle {
+    margin: 50px 0;
+    color: $bridge-orange;
+}
+
+.promo-section {
+
+     h3::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: $bridge-green;
+        bottom: 0;
+        left: calc(50% - 25px);
+    }
+}
