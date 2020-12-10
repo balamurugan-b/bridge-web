@@ -32,7 +32,7 @@ function BridgeBuilderIntro() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/bridgeBuilderBg.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>

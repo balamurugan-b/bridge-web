@@ -18,11 +18,11 @@ function NavItems(props) {
               </NavLink>
                     </NavItem>
                 ) : null}
-                <NavItem>
+                {/* <NavItem>
                     <NavLink href="/guidelines">
                         Guidelines
               </NavLink>
-                </NavItem>
+                </NavItem> */}
                 <NavItem>
                     <NavLink href="/bridgeBuilder">
                         Bridge Builder Program

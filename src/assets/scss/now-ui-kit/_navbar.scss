@@ -44,8 +44,7 @@
         }
 
         .nav-link:not(.btn){
-            text-transform: uppercase;
-            font-size: $font-size-mini;
+            font-size: $font-size-small;
             padding: $padding-base-vertical $padding-base-horizontal;
             line-height: $line-height-nav-link;
 
@@ -100,8 +99,9 @@
     }
 
     .navbar-brand{
-        text-transform: uppercase;
-        font-size: $font-size-small;
+        font-size: $font-size-h5;
+        font-family: 'Montserrat Alternates';
+        color: $bridge-green !important;
         padding-top: $padding-base-vertical;
         padding-bottom: $padding-base-vertical;
         line-height: $line-height-nav-link;

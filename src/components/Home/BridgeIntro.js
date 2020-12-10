@@ -28,17 +28,18 @@ function BridgeIntro() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/bridgeBg.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
         <Container>
           <div className="content-center brand">
-            <img
+            {/* <img
               alt="..."
               className="n-logo"
               src={require("assets/img/logo.png")}
-            ></img>
+            ></img> */}
+            <h1 className="brand-home">bridge</h1>
             <h3>For all the study material you need</h3>
             <h5>
               Notes from the best students<br />
