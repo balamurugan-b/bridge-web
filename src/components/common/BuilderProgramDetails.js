@@ -15,8 +15,8 @@ function BuilderProgramDetails() {
             <div className="col">
               <h3 className="darkblue">Who?</h3>
               <ul>
-                <li><strong className="green">Makers</strong> are the best note makers in the class.</li>
-               <li>The ones whose notes are used by everyone else in the class to study and prepare for their exams.</li>
+                <li><strong className="green">Makers</strong> are the best note makers in the class</li>
+               <li>The ones whose notes are used by everyone else in the class to study and prepare for their exams</li>
                <li>Any original creator, who has solutions to textbook problems, algorithms or circuit designs, etc and willing to share it with fellow students are <strong className="green">Makers</strong></li>
               </ul>
             </div>
@@ -31,7 +31,9 @@ function BuilderProgramDetails() {
             <div className="col">
               <h3 className="darkblue">How?</h3>
               <ul>
-                <li>Briefly explain the idea and share the app link, https://play.google.com/store/apps/details?id=app.study.bridge with others.</li>
+                <li>Briefly explain the idea and share the app link with others</li>
+                <li><strong className="green"> https://play.google.com/store/apps/details?id=app.study.bridge </strong><br/>
+                Please note, that the app will be accessible only via the above link. It cannot be discovered from Playstore yet</li>
                 <li>Once they install and publish atleast 3 notes, your Bridge wallet will be credited Rs 50 for every referral</li>
                 <li>We will do a UPI transfer to your account, once your wallet balance reaches Rs 200</li>
                 <li>This is a limited time promotion program. So, start sharing now...</li>
