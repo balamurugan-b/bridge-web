@@ -3,6 +3,8 @@ import { Button, Row, Col, Container } from 'reactstrap';
 import { withRouter } from "react-router";
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
+import moment from 'moment';
+
 import FileUpload from 'components/FileUpload';
 
 import DefaultNavbar from "components/Navbars/DefaultNavbar.js";
@@ -27,6 +29,37 @@ function ImgSlider(props) {
 
 }
 
+function Relations(props) {
+  if (props.value && props.value.length > 0) {
+    console.log(props.value)
+    return (
+      <div>
+          <p class="bold">Action History</p>
+          {props.value.map(item => (
+            <p>Relation: <Green value={item.relationship}/>, Comments: {item.comments}, By: <Bold value={"ADMIN" == item.userId ? "ADMIN" : item.user.name}/>, At: <Green value={moment(item.modifiedAt).format("lll")}/></p>
+          ))}
+      </div>
+    );
+  }
+  else {
+    return null;
+  }
+
+}
+
+function Bold(props) {
+  return (<span class="bold">{props.value}</span>);
+}
+
+function Green(props) {
+  return (<span class="green2">{props.value}</span>);
+}
+
+function Orange(props) {
+  return (<span class="orange">{props.value}</span>);
+}
+
+
 
 class NotesDetail extends React.Component {
   constructor(props) {
@@ -44,7 +77,7 @@ class NotesDetail extends React.Component {
 
   componentDidMount() {
     const id = this.props.match.params.id;
-    const url = process.env.REACT_APP_API_HOST + "/study/public/" + id;
+    const url = process.env.REACT_APP_API_HOST + "/adminStudy/" + id;
     fetch(url)
       .then(res => res.json())
       .then(
@@ -66,6 +99,7 @@ class NotesDetail extends React.Component {
         }
       )
   }
+
 
   reloadDetail() {
     console.log("Reloading...");
@@ -126,17 +160,24 @@ class NotesDetail extends React.Component {
                   <Col sm={9}>
                     <h3>{item.name}</h3>
                     <p>Description: {item.description}<br />
-                Subject: {item.subject}<br />
-                Course: {item.course}<br />
-                Creator: {item.creator.name}<br />
-                Created on: {item.createdOn}<br />
-                Modifed on: {item.modifiedOn}<br />
-                Pages: {item.links ? item.links.length : 0}, Price : {item.price}</p>
-                    <h4>Status: {item.status}</h4>
-
+                    Subject: <Bold value={item.subject}></Bold><br />
+                    Semester: <Bold value={item.semester}></Bold>,  Pages: <Bold value={item.links ? item.links.length : 0}></Bold><br />
+                    Creator: <Bold value={item.creator.name}></Bold>, Professor: <Bold value={item.professor}/><br />
+                    Course: <Bold value={item.course}/><br />
+                    College: <Bold value={item.college}/><br />
+                    University: <Bold value={item.university}/> <br />
+                    Created : <Green value={moment(item.createdOn).format("lll")}/>,
+                    Last Modifed : <Green value={moment(item.createdOn).format("lll")}/><br />
+                    Value: <Orange value={item.value}/>, Price : <Orange value={item.price}/></p>
+                    <h5>Status: <Bold value={item.status}/></h5>
                   </Col>
                   <Col sm={3}>
                     <FileUpload studyMaterialId={studyMaterialId} reloadDetail={this.reloadDetail}></FileUpload>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                  <Relations value={item.relationships}></Relations>
                   </Col>
                 </Row>
                 <Row>

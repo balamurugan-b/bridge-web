@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Button, Row, Col } from 'reactstrap';
+import moment from 'moment';
 
 class NotesList extends React.Component {
   constructor(props) {
@@ -73,13 +74,13 @@ class NotesList extends React.Component {
             <Row>
               {items.map(item => (
                 <Col sm={6}>
-                  <h3><a href={"admin/detail/" + item.id}>{item.name} </a></h3>
+                  <h3><a href={"/admin/detail/" + item.id}>{item.name} </a></h3>
                   <p>Creator: {item.creator.name}<br/>
                   Subject: {item.subject}<br/>
                   Course: {item.course}<br/>
                   College: {item.college}<br/>
-                  Created on: {item.createdOn}<br/>
-                  Modifed on: {item.modifiedOn}<br/>
+                  Created on: {moment(item.createdOn).format("lll")}<br/>
+                  Modifed on: {moment(item.createdOn).format("lll")}<br/>
                   Pages: {item.links ? item.links.length : 0}, Price : {item.price}<br/>
                   <button onClick={this.delete.bind(this, item.id)}>Delete Note</button> </p>
                 </Col>

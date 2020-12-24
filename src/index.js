@@ -44,7 +44,7 @@ ReactDOM.render(
         <Route exact path="/admin"><AdminHome type="published"></AdminHome></Route>
         <Route path="/admin/created"><AdminHome type="created" sortBy="modifiedOn" sortOrder="desc"></AdminHome></Route>
         <Route path="/admin/approved"><AdminHome type="approved" sortBy="modifiedOn" sortOrder="desc"></AdminHome></Route>
-        <Route path="/admin/rejected"><AdminHome type="rejected" sortBy="modifiedOn" sortOrder="desc"></AdminHome></Route>
+        <Route path="/admin/rejected"><AdminHome type="resubmit" sortBy="modifiedOn" sortOrder="desc"></AdminHome></Route>
         <Route path="/admin/detail/:id"><NotesDetail></NotesDetail></Route>
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
