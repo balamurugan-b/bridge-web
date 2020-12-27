@@ -16,7 +16,7 @@ function BuilderProgramDetails() {
               <h3 className="darkblue">What?</h3>
               <ul>
                 <li>You <strong>"The Makers"</strong> are our partners in building this platform</li>
-                <li>As an appreciation for your effort in uploading your notes to the platform, we are launching <strong>"Download Campaign"</strong></li>
+                <li>To appreciate your efforts in this partnership, we are launching <strong>"Community Building Program"</strong></li>
                 <li>All you have to do is... <br/>
                  - continue uploading all your notes (current semester and past semesters) <br/>
                  - get your classmates to download them <br/>
