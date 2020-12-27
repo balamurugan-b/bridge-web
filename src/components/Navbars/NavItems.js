@@ -27,7 +27,7 @@ function NavItems(props) {
                     <NavLink href="/bridgeBuilder">Bridge Builder Program</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/downloadCampaign">Download Campaign</NavLink>
+                    <NavLink href="/communityBuilding">Community Building Program</NavLink>
                 </NavItem>
             </Nav>
         </>

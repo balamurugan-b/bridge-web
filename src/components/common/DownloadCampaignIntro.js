@@ -32,13 +32,13 @@ function BridgeBuilderIntro() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bridgeBuilderBg.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/bridgeBg.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
         <Container>
           <div className="content-center brand">
-            <h2 className="promo-title">Download Campaign</h2>
+            <h2 className="promo-title">Community Building Program</h2>
             <h3>Upload your notes... get your classmates to download... <br/>and get rewarded !!!</h3>
             <h3 className="promo-subtitle"><strong>"Rs 200</strong> for every 10 download"</h3>
           </div>
