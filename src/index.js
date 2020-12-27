@@ -32,6 +32,7 @@ import AdminHome from 'views/AdminHome';
 import NotesDetail from 'views/NotesDetail';
 import Guidelines from 'views/Guidelines';
 import BridgeBuilder from 'views/BridgeBuilder';
+import DownloadCampaign from 'views/DownloadCampaign';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -41,6 +42,7 @@ ReactDOM.render(
         <Route path="/privacy"><PrivacyPage></PrivacyPage></Route>
         <Route path="/guidelines"><Guidelines></Guidelines></Route>
         <Route path="/bridgeBuilder"><BridgeBuilder></BridgeBuilder></Route>
+        <Route path="/downloadCampaign"><DownloadCampaign></DownloadCampaign></Route>
         <Route exact path="/admin"><AdminHome type="published"></AdminHome></Route>
         <Route path="/admin/created"><AdminHome type="created" sortBy="modifiedOn" sortOrder="desc"></AdminHome></Route>
         <Route path="/admin/approved"><AdminHome type="approved" sortBy="modifiedOn" sortOrder="desc"></AdminHome></Route>

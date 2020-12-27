@@ -2,10 +2,14 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
 // core components
 
-function BridgeIntro() {
+function BridgeBuilderIntro() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -28,31 +32,20 @@ function BridgeIntro() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bridgeBg.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/bridgeBuilderBg.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
         <Container>
           <div className="content-center brand">
-            {/* <img
-              alt="..."
-              className="n-logo"
-              src={require("assets/img/logo.png")}
-            ></img> */}
-            <h1 className="brand-home">bridge</h1>
-            <h3>For all the study materials you need</h3>
-            <h5>
-              Notes from the best students<br />
-              Your own notes<br />
-              Solved questions<br />
-              Concept illustrations<br />
-              Exam tips and more...
-          </h5>
-        </div>
+            <h2 className="promo-title">Download Campaign</h2>
+            <h3>Upload your notes... get your classmates to download... <br/>and get rewarded !!!</h3>
+            <h3 className="promo-subtitle"><strong>"Rs 200</strong> for every 10 download"</h3>
+          </div>
         </Container>
       </div>
     </>
   );
 }
 
-export default BridgeIntro;
+export default BridgeBuilderIntro;

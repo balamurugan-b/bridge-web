@@ -15,7 +15,7 @@ function NavItems(props) {
                     <NavItem>
                         <NavLink href="/admin">
                             Admin Home
-              </NavLink>
+                        </NavLink>
                     </NavItem>
                 ) : null}
                 {/* <NavItem>
@@ -24,9 +24,10 @@ function NavItems(props) {
               </NavLink>
                 </NavItem> */}
                 <NavItem>
-                    <NavLink href="/bridgeBuilder">
-                        Bridge Builder Program
-              </NavLink>
+                    <NavLink href="/bridgeBuilder">Bridge Builder Program</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink href="/downloadCampaign">Download Campaign</NavLink>
                 </NavItem>
             </Nav>
         </>
