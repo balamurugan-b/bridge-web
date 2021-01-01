@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Button, Row, Col } from 'reactstrap';
 import moment from 'moment';
+import queryString from 'query-string';
 
 class NotesList extends React.Component {
   constructor(props) {
@@ -13,6 +14,9 @@ class NotesList extends React.Component {
   }
 
   componentDidMount() {
+    let params = queryString.parse(this.props.location.search)
+    console.log(params)
+    
     var url = process.env.REACT_APP_API_HOST + "/adminStudy/all";
     if(this.props.type)
       url = url + "?status=" + this.props.type;

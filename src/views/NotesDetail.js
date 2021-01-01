@@ -181,11 +181,6 @@ class NotesDetail extends React.Component {
                   </Col>
                 </Row>
                 <Row>
-                  <Col>
-                    <ImgSlider images={item.links}></ImgSlider>
-                  </Col>
-                </Row>
-                <Row>
                   <Col sm={6}>
                     <p><button onClick={this.approval.bind(this, item.id, "approved")}>Approve</button> </p>
                   </Col>
@@ -194,6 +189,11 @@ class NotesDetail extends React.Component {
                       Reject comments - <input type="text" value={this.state.comments} onChange={this.addComment} name="comments" ></input>
                       <button onClick={this.approval.bind(this, item.id, "resubmit")}>Reject</button>
                     </p>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <ImgSlider images={item.links}></ImgSlider>
                   </Col>
                 </Row>
               </Container>
