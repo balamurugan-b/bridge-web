@@ -18,7 +18,7 @@ function DarkFooter() {
           </ul>
         </nav>
         <div className="copyright" id="copyright">
-          © Copyright <strong>Bridge</strong>. All Rights Reserved
+          A product from <strong>Hyper Rabbit Mobility Private Limited</strong>. All Rights Reserved
         </div>
       </Container>
     </footer>

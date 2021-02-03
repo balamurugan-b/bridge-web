@@ -44,9 +44,9 @@ ReactDOM.render(
         <Route path="/bridgeBuilder"><BridgeBuilder></BridgeBuilder></Route>
         <Route path="/communityBuilding"><DownloadCampaign></DownloadCampaign></Route>
         <Route exact path="/admin"><AdminHome type="published"></AdminHome></Route>
-        <Route path="/admin/created"><AdminHome type="created" sortBy="modifiedOn" sortOrder="desc"></AdminHome></Route>
-        <Route path="/admin/approved"><AdminHome type="approved" sortBy="modifiedOn" sortOrder="desc"></AdminHome></Route>
-        <Route path="/admin/rejected"><AdminHome type="resubmit" sortBy="modifiedOn" sortOrder="desc"></AdminHome></Route>
+        <Route path="/admin/created"><AdminHome type="created" sortBy="createdOn" sortOrder="desc"></AdminHome></Route>
+        <Route path="/admin/approved"><AdminHome type="approved" sortBy="createdOn" sortOrder="desc"></AdminHome></Route>
+        <Route path="/admin/rejected"><AdminHome type="resubmit" sortBy="createdOn" sortOrder="desc"></AdminHome></Route>
         <Route path="/admin/detail/:id"><NotesDetail></NotesDetail></Route>
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />

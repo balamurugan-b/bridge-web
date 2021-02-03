@@ -48,6 +48,7 @@ function BridgeIntro() {
               Concept illustrations<br />
               Exam tips and more...
           </h5>
+          <a href='https://play.google.com/store/apps/details?id=app.study.bridge&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
         </div>
         </Container>
       </div>
